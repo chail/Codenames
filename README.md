@@ -4,9 +4,10 @@ A quick script to help with solving the codenames game.
 ## How it works
 The goal of the codenames game is to guess some number of words that the other player is thinking of by a single-word cue. I thought that using the word2vec algorithm might be a simple approach to help solve this game. Using a word2vec model, similar words in meaning tend to be closer in n-dimensional space in their word embedding format. This script uses the word2vec algorithm to find words in meaning similar to the provided cue word.
 
-## Installation
+## Installation & setup
 1. Install [gensim][gensim].
 2. I used a prebuilt word2vec model on English Wikipedia. You can get a prebuilt model [here][model].
+3. Put the model `en.model` in the same directory as the code file.
 
 ## Usage
 Run the script with `python most_similar_words.py word1 word2 ...`, where the command line words are the input vocabulary.
